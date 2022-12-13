@@ -1,0 +1,39 @@
+<div class="container-fluid">
+
+<table class="table">
+
+    <tr>
+
+        <th>From</th>
+
+        <th>To</th>
+
+        <th>Cost</th>
+
+    </tr>
+
+    <tr>
+
+        <td>{{data.dataValues.cabFrom}}</td>
+
+        <td>{{data.dataValues.cabTo}}</td>
+
+        <td>{{data.dataValues.cost}}</td>
+
+        <td>
+
+            <a href="/paymentInvoice/{{data.dataValues.bookingId}}">
+
+                <button class="btn btn-success">Pay Now</button>
+
+            </a>
+
+        </td>
+
+
+
+    </tr>
+
+</table>
+
+</div>

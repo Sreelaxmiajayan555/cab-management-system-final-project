@@ -1,0 +1,58 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+.header{
+    color:  black;   
+    padding-top: 11px;; 
+    padding-left: 340px;
+    font-weight: bold;
+    font-size: 23px;
+}
+.mid-container{
+    background-color: antiquewhite;
+    margin-top: 60px;
+    margin-left: 750px;
+    padding-left: 50px;
+    padding-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+#pickup{
+    width: 350px;
+    height:35px;
+}
+#drop{
+    width: 350px;
+    height:35px;
+}
+#date{
+    width: 170px;
+    height:35px;
+    
+}
+#time{
+    width: 170px;
+    height:35px;
+}
+#passenger{
+    width: 350px;
+    height:35px;
+}
+#search{
+    width: 350px;
+    height: 33px;
+    background-color: #04AA6D;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+
+  .alert-danger{
+    color: red;
+  }

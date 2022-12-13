@@ -1,0 +1,51 @@
+
+         body{ 
+            background-color: rgb(0, 0, 0);
+            height: 100vh;
+            width: 100vw;
+            margin:0;
+            padding:0;
+             background-image: url("https://as1.ftcdn.net/v2/jpg/02/73/69/86/1000_F_273698693_ITe8TCT7CXbrOsLIgotzdAG9E5aTENhN.jpg"); 
+             background-size:100% 100%;
+            background-repeat: no-repeat; 
+            
+          }
+        .login{
+            background-color:rgb(255, 253, 250,0.5);
+            height: 50vh;
+            width: 50vw;
+            padding: 20%;
+            /* background-image: url("https://images.pexels.com/photos/5647634/pexels-photo-5647634.jpeg?auto=compress&cs=tinysrgb&w=600");  */
+            background-size:100% 100%;
+            background-repeat: no-repeat; 
+            margin-right: 100%;
+            padding-top: 15%;
+            margin-top:10%;
+            color: rgb(14, 14, 13);
+            
+           
+
+
+        }
+        .signup_link{
+          
+            color: rgb(82, 31, 31);
+            margin-top: 5%;
+            margin-left: 80%;
+            width: 50%;
+        }
+        button{
+            background-color:burlywood;
+            margin-top: 5%;
+            margin-left: 45%;
+            border-color: burlywood;
+           color:black;
+         
+        }
+       
+      
+        
+
+        
+
+         

@@ -1,0 +1,16 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* background-image: url("https://img.freepik.com/free-photo/taxi-driver-street-japan_23-2149297283.jpg?size=626&ext=jpg&ga=GA1.2.363739690.1667450397"); */
+    /* background-size :100%; */
+   background-color:yellow;
+     /* background-repeat: no-repeat;
+     
+     color: brown; */
+     background-image: url("https://img.freepik.com/free-photo/taxi-driver-street-japan_23-2149297283.jpg?size=626&ext=jpg&ga=GA1.2.363739690.1667450397");
+ background-repeat: no-repeat;
+ background-size: cover;
+ color: rgb(227, 232, 229);
+ size: 30%;
+    }
+  

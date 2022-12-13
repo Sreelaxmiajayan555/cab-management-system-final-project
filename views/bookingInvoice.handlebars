@@ -1,0 +1,51 @@
+<div class="container">
+    <br>
+    <br>    
+    <table class="table table-sm-6 table-dark">
+        <tr>
+            <th>Passenger Name</th>
+            <td>{{passengerName}}</td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>{{invoice.dataValues.dateOfBooking}}</td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td>{{invoice.dataValues.bookingTime}}</td>
+        </tr>
+        <tr>
+            <th>Pick up location</th>
+            <td>{{invoice.dataValues.cabFrom}}</td>
+        </tr>
+        <tr>
+            <th>Drop location</th>
+            <td>{{invoice.dataValues.cabTo}}</td>
+        </tr>
+        <tr>
+            <th>CabNo</th>
+            <td>{{invoice.dataValues.cabNo}}</td>
+        </tr>
+        <tr>
+            <th>Cost</th>
+            <td>{{invoice.dataValues.cost}}</td>
+        </tr>
+    </table>
+    <button class="btn btn-success" id = "printBtn" onclick="printPdf()">Print pdf</button>
+</div>
+
+<script>
+
+    const btn = document.getElementById('printBtn');
+
+    function printPdf()
+
+    {
+
+        btn.style.display = "none";
+
+        return window.print()
+
+    }
+
+</script>

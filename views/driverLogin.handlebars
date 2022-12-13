@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="static\driverLogin.css" type="text/css"/>
+<body style="background-color:rgb(240, 163, 63) ;">
+    <h1 class="text-center">DRIVER LOGIN</h1>
+<div class="container" style="background-color:rgb(248, 243, 243,0.5);">
+
+        <div class="row" style="background-color: rgba(245, 240, 240, 0.5);">
+           
+            <div class="col-sm-6 offset-sm-3">
+               
+                <div class="login" >
+                   
+                  <form name="loginform" id="loginform" method="post">
+                    {{!-- <div>
+                        <label>First Name</label>
+                        <input type="firstName" name="firstName" class="form-control" placeholder="Your first name" minlength="3" maxlength="50" required>
+                    </div> --}}
+                  
+                   
+                    
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="me@example.com" minlength="5" maxlength="50" required>
+                    </div>
+                  
+                   
+                    <div>
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control"  minlength="8" maxlength="25" required>
+                    </div>
+                    <br>
+                    
+                   
+
+                    <div class="send_bt">
+
+                        <button type="submit" class="login1" id="login1">Login</button>   
+                        {{#if message}}
+                        <p class="text-danger">{{message}}</p>
+                        {{/if}} 
+
+                     </div>
+                      </div>
+                       
+
+                    <div class="signup_link">
+
+                Not a member ? <a href="/driverRegister">SignUp</a>
+
+            </div>
+
+            
+                    </form>
+                    </body>

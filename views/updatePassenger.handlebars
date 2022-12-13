@@ -1,0 +1,33 @@
+<div class="container">
+    <h1 class="text-center">{{heading}}</h1>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form method="post">
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="name" name="firstName" class="form-control" placeholder="first name" value="{{data.dataValues.firstName}}">
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="name" name="lastName" class="form-control" placeholder="last name" value="{{data.dataValues.lastName}}">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control" placeholder="first name" value="{{data.dataValues.email}}">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="form-control" minlength="8" maxlength="25"  value="{{data.dataValues.password}}" required>
+                </div>
+                <div>
+                    <label for="mobile">Mobile Number</label>
+                    <input type="number" name="mobile" class="form-control" placeholder="mobile number" value="{{data.dataValues.mobile}}">
+                 </div>
+                 <div class="d-grid mt-4">
+                 <p class="alert-danger" id="error-messages"></p>
+                 <button type="submit" class="btn btn-primary shadow" id="btn-login">Update</button>
+                 </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="/static/register.css" type="text/css">
+<div class="container">
+    <h2 id="h2">Register User</h2>
+    <form method="post">
+        <div class="register-section">
+            <div class="register">
+                <input type="text" id="firstName" placeholder="First name" name="firstName" required>
+            </div>
+            <div class="register">
+                <input type="text" id="gender" placeholder="gender" name="gender" required>
+            </div>
+            <br />
+            <div class="register">
+                <input type="text" id="lastName" placeholder="Last name" name="lastName" required>
+            </div>
+            <br />
+            <br />
+            <div class="register">
+                <input type="date" id="dob" name="date" placeholder="DOB" name="dob" required>
+            </div>
+            <br />
+            <div class="register">
+                <input type="tel" id="mobile" name="mobile" placeholder="Phone number" name="mobile" required>
+            </div>
+            <br />
+            <div class="register">
+                <input type="email" id="email" placeholder="Email address" name="email" required>
+            </div>
+            <br />
+            <div class="register">
+                <input type="password" id="password" placeholder="Password" name="password" minlength="8" required>
+            </div>
+            <br />
+            <div class="register">
+                <input type="password" id="confirm" placeholder="Confirm password" name="cpassword" minlength="8"
+                    required>
+            </div>
+            <div class="alert-danger" id="cpass-error"></div>
+            <br />
+            <div class="register">
+                <input type="checkbox" id="agree" name="agree" value="yes">
+                <label for="agree"> I agree to the <a href="#">terms and conditions</a> of the website</label>
+            </div>
+            <br />
+            <div class="register">
+                <button type="submit" id="registerButton">Register</button></a>
+                {{#if message}}
+                    <p class="text-danger">{{message}}</p>
+                {{/if}}
+            </div>
+        </div>
+    </form>
+
+</div> 

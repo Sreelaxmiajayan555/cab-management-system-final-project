@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="static\login.css" type="text/css"/>
+  <div class="container">
+
+        <div class="row">
+           
+            <div class="col-sm-6 offset-sm-3">
+               
+                <div class="login">
+                   
+                  <form name="loginform" id="loginform" method="post">
+                    {{!-- <div>
+                        <label>First Name</label>
+                        <input type="firstName" name="firstName" class="form-control" placeholder="Your first name" minlength="3" maxlength="50" required>
+                    </div> --}}
+                  
+                   
+                    
+                    <div>
+                        <label style="font-size:large ;">Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="me@example.com" minlength="5" maxlength="50" required>
+                    </div>
+                  
+                   
+                    <div>
+                        <label  style="font-size:large ;">Password</label>
+                        <input type="password" name="password" class="form-control"  minlength="8" maxlength="25" required>
+                    </div>
+
+                   
+
+                    <div class="send_bt">
+
+                        <button type="submit" class="login1" id="login1" style="font-size: large;">Login</button>   
+                        {{#if message}}
+                        <p class="text-danger">{{message}}</p>
+                        {{/if}} 
+
+                     </div>
+                      </div>
+                       
+
+                    <div class="signup_link">
+
+                Not a member ? <a href="/register">SignUp</a>
+
+            </div>
+
+            
+                    </form>
+
+
+
+
+
+
+    
+    
+	
+	
+
+
+

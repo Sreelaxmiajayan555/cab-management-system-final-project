@@ -1,0 +1,55 @@
+
+<link rel="stylesheet" href="static\editCab.css" type="text/css"/>
+<body style="background-color: rgb(240, 163, 63);">
+<div class="container" >
+    <h1 class="text-center">EDIT CAB</h1>
+    <div class="row">
+        <div class="col-sm-6 offset sm-3">
+            <form method="post">
+                
+                
+                <div class="box">
+                    <label for="cabName">Cab Name</label>
+                    <input type="text" name="cabName" id="cabName" class="form-control" value="{{cabDetails.dataValues.cabName}}">
+                </div>
+                <div>
+                    <label for="cabDescription">Cab Desctription</label>
+                    <textarea name="cabDescription" id="cabDescription" cols="10" rows="5"
+                        class="form-control" >{{cabDetails.dataValues.cabDescription}}</textarea>
+                </div>
+                <div>
+                    <label for="totalCapacity">Total Capacity</label>
+                    <input type="number" name="cabTotalCapacity" id="cabTotalCapacity" class="form-control" value="{{cabDetails.dataValues.cabTotalCapacity}}">
+                </div>
+               
+
+                 
+                <div>
+                   
+                    <label for="Drivername">Driver</label>
+                    
+                    <select class="driverName" name="driverName" id="driverName">
+                    {{#each driverName}}
+                   
+                    <option value={{this.dataValues.driverName}}:{{this.dataValues.driver_Id}}> {{this.dataValues.driverName}}</option>
+                    {{/each}}
+                  
+                </select>
+                  
+
+                </div>
+                
+                
+                
+                {{!-- <div>
+                    <label for="driverId">Driver Name</label>
+                    <input type="number" name="driverId" id="driverId" class="form-control">
+                </div> --}}
+                <div class="d-grid mt-4">
+                    <button class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>

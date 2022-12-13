@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="static\addDriver.css" type="text/css"/>
+<body>
+    <h1><center>ADD DRIVER</center></h1>
+    <br>
+<div class="container">
+        
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <form method="post">
+                    <div>
+                        <label for="id">Driver name</label>
+                        <input type="name" name="driverName" class="form-control" placeholder="Driver name" >
+                    </div>
+                    <div>
+                        <label for="last name">license no.</label>
+                        <input type="name" name="driverLiceneceNo" class="form-control" placeholder="Licenseno">
+                    </div>
+                    <div>
+                        <label for="email">email</label>
+                        <input type="email" name="driverEmail" class="form-control"       >
+                    </div>
+
+                    <div>
+                        <label for="adress">address</label>
+                        <input type="text" name="driverAddress" class="form-control">
+                    </div>
+                    <div>
+                        <label for="dob">dob</label>
+                        <input type="date" name="driverDob" class="form-control">
+                    </div>
+                    <div>
+                        <label for="gender">gender</label>
+                        <input type="text" name="driverGender" id="gender" class="form-control" >
+                    </div>
+                    <div class="d-grid mt-4">
+                        <p class="alert-danger" id="error-messages"></p>
+                        <button type="submit" class="btn btn-primary shadow" id="btn-login">Save</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

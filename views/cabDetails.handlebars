@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="static\cabDetails.css" type="text/css"/>
+<h1 class="text-center">Available Cabs</h1>
+<div class="container">
+    {{#if data.role}}
+    <a href="/addCab">
+    <button class="btn btn-primary">Add Cab</button>
+    </a>
+    {{/if}}
+    <div class="table">
+    <table class="table table-striped mt-4">
+        <tr>
+            <th>Cab name</th>
+            <th>Description</th>
+            <th>Capacity</th>
+
+            
+        </tr>
+        {{#if data.role}}
+
+       {{#each cabDetails}}
+
+       <tr>
+
+         <td>{{this.dataValues.cabName}}</td>
+
+         <td>{{this.dataValues.cabDescription}}</td>
+
+         <td>{{this.dataValues.cabTotalCapacity}}</td>
+
+         <td>
+
+            <a href="editCabDetails/{{this.dataValues.cabNo}}"><button class="btn btn-primary">Edit</button></a>
+
+            <a href="deleteCabDetails/{{this.dataValues.cabNo}}"><button class="btn btn-primary">Delete</button></a>
+
+         </td>
+
+       </tr>
+
+        {{/each}}
+</div>
+
+
+        {{else}}
+
+        {{#each cabDetails}}
+
+                <tr>
+
+            <td>{{this.dataValues.cabName}}</td>
+
+            <td>{{this.dataValues.cabDescription}}</td>
+
+            <td>{{this.dataValues.cabTotalCapacity}}</td>
+
+            <td>
+
+                <a href="/booking/{{this.dataValues.cabNo}}">Book now</a>
+
+            </td>
+
+        </tr>
+
+
+
+        {{/each}}
+
+       {{/if}}
+       
+    </table>
+    <p class="text-end">You are logged in as: 
+        <b>{{data.firstName}} {{data.lastName}}</b>
+    </p>
+</div>

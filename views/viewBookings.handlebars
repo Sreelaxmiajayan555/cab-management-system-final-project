@@ -1,0 +1,55 @@
+<body style="background-color:rgb(240, 163, 63) ;">
+    <h1 class="text-center">DRIVER BOOKINGS</h1>
+<div class="col-sm-6 offset-sm-3">
+    <form method="post">
+    <label for="date" >Date</label>
+    <input type="date" name="date" id="date" class="form-control">
+    <button type="submit" class="btn btn-primary">Search</button>
+
+
+</form>
+
+</div>
+<br>
+{{#if found}}
+    <div class="alert alert-warning" role="alert">No bookings found!</div>
+{{/if}}
+
+<div class="container" style="background-color: rgb(249, 242, 242,0.5);">
+    <table class="table table-striped" >
+        <tr>
+            <th>Booking Id</th>
+            <th>Date of booking</th>
+            <th>Cab From</th>
+            <th>Cab To</th>
+            <th>Booking Time</th>
+            <th>Cab No</th>
+            <th>Cost</th>
+            <th>Passenger Id</th>
+            <th>Driver Id</th>
+            
+        </tr>
+        {{#each data}}
+
+        <tr>
+            <td>{{this.dataValues.bookingId}}</td>
+            <td>{{this.dataValues.dateOfBooking}}</td>
+            <td>{{this.dataValues.cabFrom}}</td>
+            <td>{{this.dataValues.cabTo}}</td>
+            <td>{{this.dataValues.bookingTime}}</td>
+            <td>{{this.dataValues.cabNo}}</td>
+            <td>{{this.dataValues.cost}}</td>
+            <td>{{this.dataValues.passengerId}}</td>
+            <td>{{this.dataValues.driverId}}</td>
+           
+            
+        </tr>
+        {{/each}}
+
+    </table>
+    <a href="viewBookings">
+        <button class="btn btn-success">Booking Details</button>
+    </a>
+    
+</div>
+</body>
